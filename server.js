@@ -1,11 +1,11 @@
 // npm
-import dotenv from 'dotenv'
-import express from 'express';
+const dotenv = require('dotenv');
 dotenv.config();
+const express = require('express');
 const app = express();
-import mongoose from 'mongoose';
-import cors from 'cors';
-import logger from 'morgan';
+const mongoose = require('mongoose');
+const cors = require('cors');
+const logger = require('morgan');
 
 // Import routers
 const authRouter = require('./controllers/auth');
